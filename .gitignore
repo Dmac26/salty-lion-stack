@@ -1,0 +1,45 @@
+
+### .gitignore (root level)
+```gitignore
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular
+.angular/
+dist/
+tmp/
+*.log
+*.map
+
+# Nest / TypeScript
+dist/
+*.tsbuildinfo
+
+# SQLite
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Misc
+coverage/
