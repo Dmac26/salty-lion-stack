@@ -1,1 +1,13 @@
-<p>header works!</p>
+<nav>
+  <div>
+    <div class="logo">Salty Lion</div>
+
+    <ul class="nav-links">
+      @for (link of links(); track link.href) {
+        <li>
+          <a [href]="link.href">{{ link.label }}</a>
+        </li>
+      }
+    </ul>
+  </div>
+</nav>
