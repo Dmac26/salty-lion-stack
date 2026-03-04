@@ -1,4 +1,4 @@
-<div class="main-wrapper">
+<div class="page-grid">
   <app-header [links]="[
     { label: 'Home', href: '#hero' },
     { label: 'Services', href: '#services' },
@@ -6,16 +6,15 @@
     { label: 'Contact', href: '#cta' }
   ]"></app-header>
 
-  <div class="main-layout">
-    <app-sidebar [links]="[
-        { label: 'Dashboard', href: '#dashboard' },
-        { label: 'Profile', href: '#profile' },
-        { label: 'Settings', href: '#settings' },
-        { label: 'Analytics', href: '#analytics' },
-        { label: 'Logout', href: '#logout' }
-    ]"></app-sidebar>
-    <app-body></app-body>
-  </div>
+  <app-sidebar [links]="[
+      { label: 'Dashboard', href: '#dashboard' },
+      { label: 'Profile', href: '#profile' },
+      { label: 'Settings', href: '#settings' },
+      { label: 'Analytics', href: '#analytics' },
+      { label: 'Logout', href: '#logout' }
+  ]"></app-sidebar>
+
+  <app-body></app-body>
 
   <app-footer></app-footer>
 </div>
