@@ -1,41 +1,77 @@
+// .page-grid {
+//   display: grid;
+//   grid-template-columns: 13rem 1fr;          // sidebar | main + header/footer span
+//   grid-template-rows: 5vh 1fr auto;          // header | content | footer
+//   grid-template-areas:
+//     "header header"
+//     "sidebar main"
+//     "sidebar footer";                         // ← key change: footer only under main
+//   min-height: 100vh;
+//   //gap: 1rem;
+// }
+
+// app-header {
+//   grid-area: header;
+//   position: sticky;
+//   top: 0;
+//   z-index: 100;
+//   height: 7vh;
+//   background: white;
+// }
+
+// app-sidebar {
+//   grid-area: sidebar;
+//   position: sticky;
+//   top: 0;                     // sticks to top of viewport
+//   height: 100vh;              // full viewport height so it covers everything
+//   background: orange;
+//   overflow-y: auto;           // internal scroll if links exceed height
+//   align-self: start;          // ← critical: prevents stretch, allows sticking
+//   z-index: 90;
+// }
+
+// app-body {
+//   grid-area: main;
+//   // add min-height or tall content here to test scroll
+// }
+
+// app-footer {
+//   grid-area: footer;
+//   // styles as needed; it now sits only under main content
+// }
+
+
 .page-grid {
   display: grid;
-  grid-template-columns: 13rem 1fr;          // sidebar | main + header/footer span
-  grid-template-rows: 5vh 1fr auto;          // header | content | footer
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "sidebar footer";                         // ← key change: footer only under main
-  min-height: 100vh;
-  //gap: 1rem;
+  grid-template-columns: repeat(6, 16vw);  // exactly 5 equal columns, 200px each
+  grid-template-rows: 5vh 90vh 20vh;                    // header row, content row (grows), footer row
+  min-height: 100vh;                                     // full viewport height minimum
+  gap: 1rem;                                             // spacing between cells
 }
 
+// Place each component explicitly
 app-header {
-  grid-area: header;
   position: sticky;
   top: 0;
-  z-index: 100;
-  height: 7vh;
-  background: white;
+  z-index: 10;
+  grid-column: 1 / 6;    // starts at column 1, ends after column 5 (spans all 5)
+  grid-row: 1;
+  background-color: white;        // first row
 }
 
 app-sidebar {
-  grid-area: sidebar;
-  position: sticky;
-  top: 0;                     // sticks to top of viewport
-  height: 100vh;              // full viewport height so it covers everything
-  background: orange;
-  overflow-y: auto;           // internal scroll if links exceed height
-  align-self: start;          // ← critical: prevents stretch, allows sticking
-  z-index: 90;
+  position: absolute;
+  bottom: 0;
+  grid-column: 1;        // only first column
+  grid-row: 2;           // second row (content area)
 }
 
 app-body {
-  grid-area: main;
-  // add min-height or tall content here to test scroll
+  grid-column: 2 / 6;    // columns 2 through 5
+  grid-row: 2;           // same row as sidebar
 }
 
 app-footer {
-  grid-area: footer;
-  // styles as needed; it now sits only under main content
+  grid-column: 1 / 6;    // spans all 5 columns
+  grid-row: 3;           // third row
 }
