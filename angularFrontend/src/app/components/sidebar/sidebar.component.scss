@@ -1,66 +1,14 @@
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 13rem;
-  background-color: #f8f9fa;   // light gray — clean & modern
-  border-right: 1px solid #e0e0e0;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);   // subtle depth
-  z-index: 1000;          // stays above content
-  overflow-y: auto;       // scroll if many links
-}
+  .sidebar-content {
+    .sidebar-header {
 
-.sidebar-content {
-  display: flex;
-  flex-direction: column;
-  //height: 100%;
-}
-
-.sidebar-header {
-  padding: 20px 24px;
-  border-bottom: 1px solid #e0e0e0;
-
-  h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #333;
-  }
-}
-
-.nav-links {
-  list-style: none;
-
-  // li {
-  //   margin: 4px 0;
-  // }
-
-  a {
-    display: flex;
-    align-items: center;
-    color: #444;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-
-    &:hover {
-      background-color: #e8f0fe;
-      color: #1a73e8;        // nice blue accent
     }
 
-    &.active {
-      background-color: #e3f2fd;
-      color: #1a73e8;
-      font-weight: 500;
-    }
-  }
-}
+    nav {
 
-// Optional: make it collapse on mobile
-@media (max-width: 768px) {
-  .sidebar {
-    width: 220px;         // slightly narrower
-    // or transform: translateX(-100%);  + toggle button in parent
+      .nav-links {
+
+      }
+    }
   }
 }
