@@ -4,12 +4,21 @@
       <h3>Navigation</h3>
     </div>
 
-
     <nav>
       <ul class="nav-links">
         @for (link of links(); track link.href) {
           <li>
-            <a [href]="link.href">{{ link.label }}</a>
+            <!-- For a site without routing use the anchor element below-->
+            <a [href]="link.href">
+
+            <!-- Use the anchor element below for a site with routing -->
+            <!-- <a
+              [href]="link.href"
+              [class.active]="isActive(link.href)"
+              routerLinkActive="active"
+            > -->
+              {{ link.label }}
+            </a>
           </li>
         }
       </ul>
