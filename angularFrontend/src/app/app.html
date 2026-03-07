@@ -1,23 +1,22 @@
-<div class="main-wrapper">
-  <div class="main-container">
-      <app-sidebar [links]="[
-      { label: 'Dashboard', href: '#dashboard' },
-      { label: 'Profile', href: '#profile' },
-      { label: 'Settings', href: '#settings' },
-      { label: 'Analytics', href: '#analytics' },
-      { label: 'Logout', href: '#logout' }
+<div class="main-container">
+  <app-sidebar [links]="[
+  { label: 'Dashboard', href: '#dashboard' },
+  { label: 'Profile', href: '#profile' },
+  { label: 'Settings', href: '#settings' },
+  { label: 'Analytics', href: '#analytics' },
+  { label: 'Logout', href: '#logout' }
   ]"></app-sidebar>
 
   <div class="main-layout">
-      <app-header [links]="[
-      { label: 'Home', href: '#hero' },
-      { label: 'Services', href: '#services' },
-      { label: 'Projects', href: '#showcase' },
-      { label: 'Contact', href: '#cta' }
-      ]"></app-header>
-      <app-body></app-body>
-  </div>
-  </div>
+    <app-header [links]="[
+    { label: 'Home', href: '#hero' },
+    { label: 'Services', href: '#services' },
+    { label: 'Projects', href: '#showcase' },
+    { label: 'Contact', href: '#cta' }
+    ]"></app-header>
 
-  <app-footer></app-footer>
+    <app-body></app-body>
+
+    <app-footer></app-footer>
+  </div>
 </div>

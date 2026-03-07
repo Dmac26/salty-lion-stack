@@ -7,6 +7,12 @@
   align-items: center;
   position: fixed;
 
+  .sidebar-toggle-wrapper {
+    display: flex;
+    height: fit-content;
+    justify-content: flex-end;
+    width: 80%;
+  }
 
   .sidebar-content {
     display: flex;

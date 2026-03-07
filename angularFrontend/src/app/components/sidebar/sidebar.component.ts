@@ -1,13 +1,15 @@
 import { Component, input, signal } from '@angular/core';
 // If you're using Angular Router (recommended), also import:
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ToggleArrowComponent } from '@components/toggle-arrow/toggle-arrow.component';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    ToggleArrowComponent
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
