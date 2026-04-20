@@ -1,0 +1,70 @@
+.sidebar-toggle-container {
+  position: relative;
+
+  input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0.9rem;          // Slightly taller for better chevron shape
+    width: 1.6rem;           // Adjust based on your layout
+    transition: transform 0.6s ease;  // Smooth flip
+
+    .upper-row,
+    .lower-row {
+      display: flex;
+      justify-content: space-between;
+      height: 40%;             // Each row takes ~40% with space
+      width: 100%;
+      align-items: center;
+    }
+
+    .left-line,
+    .right-line {
+      height: 4px;             // Thicker lines for visibility (was implicit via %)
+      background-color: black;
+      border-radius: 2px;      // Optional: slight rounding
+      transition: transform 0.6s ease;
+      transform-origin: left center;  // Pivot from left
+    }
+
+    // Form << (left pointing double chevron)
+    .upper-row {
+      .left-line {
+        width: 50%;
+        transform: rotate(-35deg) translateX(-7px) translateY(1px);
+      }
+      .right-line {
+        width: 50%;
+        transform: rotate(-35deg) translateX(-7px) translateY(1px);
+      }
+    }
+
+    .lower-row {
+      .left-line {
+        width: 50%;
+        transform: rotate(35deg) translateX(-7px) translateY(-1px);
+      }
+      .right-line {
+        width: 50%;
+        transform: rotate(35deg) translateX(-7px) translateY(-1px);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:has(.arrow-toggle:checked) {
+    .arrow {
+      transform: rotate(180deg);  // Flips << → >>
+    }
+  }
+}
