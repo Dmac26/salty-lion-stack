@@ -1,0 +1,90 @@
+:host {
+    display: flex;
+    height: 91vh !important;
+    align-items: center;
+    justify-content: center; 
+    background-color: #f6f9ff;
+
+    .hero-container {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72%;
+            
+            .hero-copy {
+                display: flex;
+                flex-direction: column;
+                align-self: stretch;
+                justify-content: space-between;
+                height: 93%;
+
+                .hero-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    h1 {
+                        font-size: 4.5rem;
+                        margin: 0;
+                    }
+
+                    .dark-blue {
+                        color: #131d26;
+                    }
+
+                    .light-blue {
+                        color: #005f93;
+                    }
+                }
+
+
+                p {
+                    width: 64%;
+                    font-size: 1.1rem; 
+                }
+
+                .cta-buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 60%;
+
+                    button {
+                        all: unset;
+                        height: 4rem;
+                        width: fit-content;
+                        padding: 0 1.5rem 0 1.5rem;
+                        border-radius: 12px;
+
+                        &.journey-btn {
+                            background-color: #036396;
+                            color: #ffffff;
+                        }
+
+                        &.curriculum-btn {
+                            background-color: #d8e4f0;
+                            color: #131d26;
+                        }
+                    }
+                    
+                }
+            }
+
+            .hero-image {
+                height: 100%;
+                width: 80%;
+                border-radius: 12px;
+            }
+        }
+    }
+}
+
