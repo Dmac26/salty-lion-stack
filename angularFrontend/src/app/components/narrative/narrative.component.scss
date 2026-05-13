@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff9c7;
+
+    .narrative-conatiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70%;
+        width: 70%;
+        
+        div {
+            width: 50%;
+        }
+    }
+}
