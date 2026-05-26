@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff9c7;
+    height: 155vh !important;
 
     .narrative-conatiner {
         display: flex;
@@ -14,6 +15,53 @@
         
         div {
             width: 50%;
+        }
+
+        .left-side {
+
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 73%;
+            min-height: 45rem;
+
+            .working-pic {
+                height: 19rem;
+            }
+
+            .right-copy-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 84%;
+                padding: 1.25rem 0rem 1.25rem 0rem;
+                border: 1px solid #f3df27;
+                border-radius: 8px;
+
+                 .right-copy {
+                    display: flex;
+                    flex-direction: column;
+                    //align-items: center;
+                    //justify-content: center;
+                    height: fit-content;
+                    width: 90%;
+
+                    .five-stars {
+                        //height: 5rem;
+                        width: 5rem;
+                        filter: brightness(0) saturate(100%) invert(96%) sepia(32%) saturate(7469%) hue-rotate(336deg) brightness(99%) contrast(94%);
+                    }
+
+                    .bold-text {
+                        font-weight: bold;
+                        margin: unset;
+                    }
+                }
+            }
         }
     }
 }

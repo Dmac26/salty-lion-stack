@@ -13,6 +13,7 @@ import { FaqComponent } from '@components/faq/faq.component';
 import { CtaComponent } from '@components/cta/cta.component';
 import { StatsComponent } from '@components/stats/stats.componet';
 import { NarrativeComponent } from '@components/narrative/narrative.component';
+import { WhoForComponent } from '@components/who-for/who-for.component';
 
 @Component({
   selector: 'app-body',
@@ -30,7 +31,8 @@ import { NarrativeComponent } from '@components/narrative/narrative.component';
               FaqComponent,
               CtaComponent,
               StatsComponent,
-              NarrativeComponent
+              NarrativeComponent,
+              WhoForComponent
             ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss',

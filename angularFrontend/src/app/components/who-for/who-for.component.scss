@@ -1,0 +1,73 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh !important;
+    background-color: #ffffff;
+
+    .who-for-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80%;
+        width: 80%;
+        background-color: #ffffff;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            &.left-side {
+                background-color: #212121;
+                align-items: center;
+            }
+
+            &.right-side {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffffff;
+
+                div {
+                    width: 100%;
+                    padding-left: 6.5rem;
+
+                    .bold-blue {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 19.5rem;
+                        padding-left: unset;
+
+                        .bold-blue-text {
+                            margin: unset;
+                            width: fit-content;
+                            color: #0c5fea;
+                        }
+
+                        .arrow {
+                            display: flex;
+                            margin: unset;
+                            height: 1.5rem;
+                            width: 1.75rem;
+                            border-radius: 15px;
+                            padding-bottom: .25rem;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #0c5fea;
+                            color: #ffffff;
+                        }
+                    }
+
+                    &.right-place {
+                        background-color: #212121;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
