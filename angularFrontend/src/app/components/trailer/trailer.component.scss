@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff9c7;
+    background-color: #ecf4ff;
+
+    .embedded-vid-container {
+        width: 57%;
+    }
+}
