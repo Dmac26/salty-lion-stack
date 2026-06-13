@@ -1,3 +1,9 @@
+:host {
+  z-index: 1000;
+  background-color: #fff9c7;
+  background-color: #ecf4ff;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -8,11 +14,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    max-width: 1600px;
+    height: 100%;
+    width: 93%;
+    //max-width: 1600px;
+
+    .brand-name {
+      font-weight: bold;
+    }
 
     .logo {
-      font-weight: bold;
+      cursor: pointer;
+      width: 9.5rem;
     }
 
     .nav-links {
@@ -26,6 +38,23 @@ nav {
           color: inherit;
         }
       }
+    }
+
+    button {
+      all: unset;
+      background-color: #f6dd29;
+      //color: #090c43;
+      //color: #2378ab;
+      //color: #195478;
+      color: #131d26;
+      height: 2.25rem;
+      width: fit-content;
+      padding: 0rem 1rem 0rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      cursor: pointer;
     }
   }
 }

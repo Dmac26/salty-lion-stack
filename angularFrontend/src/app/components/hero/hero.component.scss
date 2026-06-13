@@ -1,0 +1,96 @@
+:host {
+    display: flex;
+    min-height: unset !important;
+    height: 50vh !important;
+    align-items: center;
+    justify-content: center; 
+    background-color: #f6f9ff;
+    background-color: #fff9c7;
+    background-color: #ecf4ff;
+
+    .hero-container {
+        display: flex;
+        height: 90%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+
+            
+            .hero-copy {
+                display: flex;
+                flex-direction: column;
+                align-self: stretch;
+                justify-content: space-between;
+                height: 93%;
+
+                .headline-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    h1 {
+                        font-size: 4.5rem;
+                        margin: 0;
+                    }
+
+                    .dark-blue {
+                        color: #131d26;
+                    }
+
+                    .light-blue {
+                        color: #005f93;
+                    }
+                }
+
+                .subheadline-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        margin: 0;
+                        font-size: 2rem;
+                        color: #71a3c1;
+                        color: #131d26;
+                    }
+                }
+
+
+                .button-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    button {
+                        all: unset;
+                        font-size: 1.75rem;
+                        height: 5rem;
+                        width: fit-content;
+                        padding: 0 2rem 0 2rem;
+                        border-radius: 12px;
+
+                        &.journey-btn {
+                            background-color: #036396;
+                            background-color: #0061ff;
+                            color: #ffffff;
+                        }
+
+                        &.curriculum-btn {
+                            background-color: #d8e4f0;
+                            color: #131d26;
+                        }
+                    }
+                }
+                    
+            }
+
+            .hero-image {
+                height: 100%;
+                width: 80%;
+                border-radius: 12px;
+            }
+        //}
+    }
+}
+
