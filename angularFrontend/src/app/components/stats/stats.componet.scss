@@ -6,37 +6,81 @@
     height: 40vh !important;
     background-color: #ecf4ff;
 
-    .stats-box {
+    .stats-pill {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #07182e;
+        color: #ffffff;
+        width: 20rem;
+        height: 2rem;
+        border-radius: 16px;
+        transform: translate(0rem, 1rem);
+
+        .stats-pill-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+
+            img {
+                height: 1.5rem;
+                width: 1.5rem;
+                filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(4854%) hue-rotate(215deg) brightness(103%) contrast(104%);
+                filter: brightness(0) saturate(100%) invert(29%) sepia(74%) saturate(2576%) hue-rotate(185deg) brightness(90%) contrast(79%);
+                filter: brightness(0) saturate(100%) invert(56%) sepia(29%) saturate(1227%) hue-rotate(163deg) brightness(97%) contrast(101%);
+            }
+        }
+    }
+
+    .stats-wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        height: 80%;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
         width: 57%;
         border-radius: 8px;
         background-color: #1b79b6;
         background: linear-gradient(
         to bottom,
-        #0c223f 0%,
-        #124a6e 35%,
-        #1b79b6 100%
+            #0c223f 0%,
+            #124a6e 35%,
+            #1b79b6 100%
         );
 
-        background: linear-gradient(
-            to bottom,
-            #0c223f 0%, #1b79b6 45%, #1b79b6 100%
-        );
-
-        div {
+        .stats-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 30%;
-            height: 100%;
-            color: white;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 67%;
+            width: 100%;
 
-            p {
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                height: 100%;
+                color: white;
 
+
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(8%) sepia(10%) saturate(6546%) hue-rotate(187deg) brightness(99%) contrast(100%);
+                    height: 4rem;
+                    width: 7.55rem;
+                }
+
+                .stats-copy {
+                    width: 100%;
+
+                    p, h2 {
+                        margin: unset;
+                    }
+                }
             }
         }
     }
