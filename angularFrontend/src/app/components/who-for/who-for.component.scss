@@ -34,6 +34,8 @@
                     background-color: #212121;
                     color: #ffffff;
                     align-items: center;
+                    border-top-left-radius: 92px;
+                    border-bottom-left-radius: 92px;
                 }
 
                 &.right-side-container {
@@ -42,10 +44,12 @@
                     align-items: center;
                     justify-content: center;
                     background-color: #ffffff;
+                    border-top-right-radius: 92px;
+                    border-bottom-right-radius: 92px;
+                    
 
                     div {
                         width: 100%;
-                        //padding-left: 6.5rem;
 
                         .bold-blue {
                             display: flex;
@@ -79,6 +83,7 @@
                             align-items: center;
                             justify-content: center;
                             background-color: #212121;
+                            border-right: 2px solid #212121;
                             
 
                             .icon-only-logo {
@@ -100,11 +105,23 @@
 
                     div {
                         display: flex;
-                        width: 90%;
+                        width: 100%;
+
+                        div {
+                            width: 90%;
+                        }
                     }
 
-                    .btg-icon-section {
-                        width: 100%;
+                    .top-section {
+                        border-top: 2px solid #0c5fea;
+                        border-right: 2px solid #0c5fea;
+                        border-top-right-radius: 92px;
+                    }
+
+                    .bottom-section {
+                        border-bottom: 2px solid #0c5fea;
+                        border-right: 2px solid #0c5fea;
+                        border-bottom-right-radius: 92px;
                     }
 
                    .right-place-headline {
