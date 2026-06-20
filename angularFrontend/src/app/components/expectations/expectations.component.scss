@@ -1,0 +1,14 @@
+:host {
+  padding: 2em;
+
+  h2 {
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+  }
+}
