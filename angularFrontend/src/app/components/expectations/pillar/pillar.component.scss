@@ -1,0 +1,20 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 5fr 6fr;
+  gap: 2em;
+
+  i {
+    background-color: blue;
+    font-size: 2em;
+    aspect-ratio: 1;
+    height: fit-content;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 25px 25px;
+  }
+}
