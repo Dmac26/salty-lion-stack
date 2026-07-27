@@ -1,0 +1,131 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf4ff;
+    width: 100vw;
+    padding: 7rem 0 7rem 0;
+    height: fit-content;
+
+    .challenge-result-card {
+        display: flex;
+        flex-direction: row;
+        height: 77%;
+        width: 62%;
+        background: linear-gradient(to bottom, #121212 40%, #015ef7 100%);
+        border-radius: 18px;
+        align-items: center;
+        justify-content: center;
+
+        .challenge-result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1rem 2fr;
+            grid-template-rows: fit-content fit-content fit-content fit-content fit-content;
+            gap: 5px;
+            //height: 95%;
+            width: 95%;
+            padding: 3rem 2rem 3rem 0rem;
+            color: #ffffff;
+
+            .video-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                background-color: none;
+
+                grid-column: 1;
+                grid-row: 1 / span 5;
+
+                app-embedded-vid {
+                    width: 80%;
+                    height: 80%;
+                }
+            }
+
+            h3 {
+                color:#015ef7;
+            }
+
+            .a, .b, .c, .d, .f, .h {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .g, .e {
+                display: flex;
+                align-items: center;
+            }
+
+            .a { grid-column: 2; grid-row: 1; height: 1.25rem; }
+            .b { grid-column: 2; grid-row: 2; }
+            .c { grid-column: 2; grid-row: 3; height: 1.25rem; }
+            .d { grid-column: 2; grid-row: 4; }
+            .e { grid-column: 3; grid-row: 1; height: 1.25rem; }
+            .f { 
+                grid-column: 3; 
+                grid-row: 2; 
+                height: fit-content;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    height: fit-content;
+                    width: 95%;
+                }
+            }
+            .g { grid-column: 3; grid-row: 3; height: 1.25rem; }
+            .h { grid-column: 3; grid-row: 4; }
+            .i { 
+                grid-column: 2 / span 2; 
+                grid-row: 5;
+                padding: 1rem;
+                //background: linear-gradient(to bottom, #0061fb 20%, #035bf0 100%);
+                background: linear-gradient(to bottom, #0061fb 70%, #014cc7 100%);
+                border-radius: 8px;
+
+                .i {
+                    grid-column: 2 / span 2;
+                    grid-row: 5;
+                    position: relative;
+
+                    padding: 1rem;
+                    background: linear-gradient(to bottom, #0061fb 70%, #014cc7 100%);
+                    border-radius: 8px;
+
+                    &::before {
+                        content: "";
+                        // position: absolute;
+
+                        // top: -12px;
+                        // left: -12px;
+
+                        width: 48px;
+                        height: 48px;
+
+                        background-color: red;
+                        //background-image: url('/images/quoticon.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+            .challenge-result-icon {
+                height: 2rem;
+                width: 2rem;
+                filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(2002%) hue-rotate(210deg) brightness(91%) contrast(114%);
+            }
+
+            .vertical-line {
+                width: 1px;
+                height: 92%;
+                background-color: #015ef7;
+            }
+        }
+
+    }
+}

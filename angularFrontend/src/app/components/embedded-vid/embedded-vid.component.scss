@@ -1,11 +1,14 @@
+$instance-iframe-position: var(--iframe-position, relative); 
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 
   iframe {
-    position: absolute;
+    position: $instance-iframe-position;
     top: 0;
     left: 0;
     width: 100%;

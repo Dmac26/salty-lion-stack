@@ -15,6 +15,7 @@ import { StatsComponent } from '@components/stats/stats.componet';
 import { NarrativeComponent } from '@components/narrative/narrative.component';
 import { WhoForComponent } from '@components/who-for/who-for.component';
 import { ExpectationsComponent } from '@components/expectations/expectations.component';
+import { ChallengeResult } from '@components/challenge-result/challenge-result';
 import { PricingComponent } from '@components/pricing/pricing.component';
 
 @Component({
@@ -36,6 +37,7 @@ import { PricingComponent } from '@components/pricing/pricing.component';
     NarrativeComponent,
     WhoForComponent,
     ExpectationsComponent,
+    ChallengeResult,
     PricingComponent,
   ],
   templateUrl: './body.component.html',
