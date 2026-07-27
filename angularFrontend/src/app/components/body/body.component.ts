@@ -16,6 +16,8 @@ import { NarrativeComponent } from '@components/narrative/narrative.component';
 import { WhoForComponent } from '@components/who-for/who-for.component';
 import { ExpectationsComponent } from '@components/expectations/expectations.component';
 import { ChallengeResult } from '@components/challenge-result/challenge-result';
+import { WhatToExpect } from '@components/what-to-expect/what-to-expect';
+import { WhatYouGet } from '@components/what-you-get/what-you-get';
 
 @Component({
   selector: 'app-body',
@@ -36,7 +38,9 @@ import { ChallengeResult } from '@components/challenge-result/challenge-result';
     NarrativeComponent,
     WhoForComponent,
     ExpectationsComponent,
-    ChallengeResult
+    ChallengeResult,
+    WhatToExpect,
+    WhatYouGet
   ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss',
