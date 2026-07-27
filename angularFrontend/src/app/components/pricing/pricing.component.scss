@@ -1,0 +1,15 @@
+:host {
+  padding: 2em;
+
+  h2 {
+    text-align: center;
+  }
+
+  .memberships {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2em;
+  }
+}
+

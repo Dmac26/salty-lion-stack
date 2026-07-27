@@ -1,0 +1,21 @@
+<div>
+  <span>
+    Pricing &mdash; Basic &bull; Standard &bull; VIP
+  </span>
+  <h2>
+    Choose Your Membership
+  </h2>
+  <span>Lorem ipsum dolor sit amet consectetur adipiscing</span>
+
+  <div class="memberships">
+    @for (membership of memberships; track $index) {
+      <app-membership
+        [name]="membership.name"
+        [price]="membership.price"
+        [features]="membership.features"
+        [isMostPopular]="membership.isMostPopular"
+        [cta]="membership.cta"
+      ></app-membership>
+    }
+  </div>
+</div>
