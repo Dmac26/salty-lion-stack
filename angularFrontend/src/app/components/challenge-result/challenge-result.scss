@@ -1,0 +1,72 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf4ff;
+    width: 100vw;
+    height: 95vh;
+
+    .challenge-result-card {
+        display: flex;
+        flex-direction: row;
+        height: 77%;
+        width: 62%;
+        background: linear-gradient(to bottom, #121212 0%, #015ef7 100%);
+        border-radius: 18px;
+
+        .video-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 35%;
+
+            app-embedded-vid {
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        // .line-section {
+        //     width: 2%;
+        // }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 65%;
+
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                height: 90%;
+                width: 80%;
+                border: 1px red solid;
+
+                .content-section-section {
+                    width: 100%;
+                    border: 1px white solid;
+
+                    div {
+                        border:1px #015ef7 solid;
+                        width: 90%;
+
+                        h3 {
+                            color: #015ef7;
+                        }
+
+                        p, h2 {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

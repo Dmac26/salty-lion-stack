@@ -1,1 +1,15 @@
-<p>testimonials.component works!</p>
+<div class="track">
+  @for (item of [].constructor(2); track $index) {
+    <div class="entry-group">
+      @for (entry of entries; track entry) {
+        <div class="entry">
+          <p>
+            {{entry.quote}}
+            <br />
+            &mdash; {{entry.name}}
+          </p>
+        </div>
+      }
+    </div>
+  }
+</div>

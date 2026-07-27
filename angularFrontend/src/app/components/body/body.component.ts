@@ -14,27 +14,31 @@ import { CtaComponent } from '@components/cta/cta.component';
 import { StatsComponent } from '@components/stats/stats.componet';
 import { NarrativeComponent } from '@components/narrative/narrative.component';
 import { WhoForComponent } from '@components/who-for/who-for.component';
+import { ExpectationsComponent } from '@components/expectations/expectations.component';
+import { ChallengeResult } from '@components/challenge-result/challenge-result';
 
 @Component({
   selector: 'app-body',
   imports: [
-              SectionBaseComponent, 
-              HeroComponent, 
-              TrailerComponent,
-              SolutionComponent,
-              TestimonialsComponent,
-              TimelineComponent,
-              ProgramsComponent,
-              SocialProofComponent,
-              AboutComponent,
-              GuaranteeComponent,
-              FaqComponent,
-              CtaComponent,
-              StatsComponent,
-              NarrativeComponent,
-              WhoForComponent
-            ],
+    SectionBaseComponent,
+    HeroComponent,
+    TrailerComponent,
+    SolutionComponent,
+    TestimonialsComponent,
+    TimelineComponent,
+    ProgramsComponent,
+    SocialProofComponent,
+    AboutComponent,
+    GuaranteeComponent,
+    FaqComponent,
+    CtaComponent,
+    StatsComponent,
+    NarrativeComponent,
+    WhoForComponent,
+    ExpectationsComponent,
+    ChallengeResult
+  ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss',
 })
-export class BodyComponent {}
+export class BodyComponent { }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -10,7 +10,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class EmbeddedVidComponent {
   @Input() videoId!: string;
-  //videoUrl: SafeResourceUrl;
+  @Input() instanceIframePosition!: string;
+
+  @HostBinding('style.--iframe-position') get iframePosition() {
+    return this.instanceIframePosition;
+  }
 
   constructor(private sanitizer: DomSanitizer) {
   }
