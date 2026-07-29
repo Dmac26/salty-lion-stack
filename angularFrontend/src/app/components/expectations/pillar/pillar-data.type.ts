@@ -1,5 +1,5 @@
 export type PillarData = {
-  icon: string;
+  iconSrc: string;
   title: string;
   body: string;
   imageSrc: string;
