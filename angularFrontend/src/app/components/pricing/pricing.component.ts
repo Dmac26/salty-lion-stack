@@ -13,7 +13,7 @@ export class PricingComponent {
   readonly memberships = [
     {
       name: "Basic",
-      price: "50",
+      price: "XX",
       features: Array(4).fill("Lorem ipsum dolor"),
       cta: "Join Basic"
     },
@@ -26,7 +26,7 @@ export class PricingComponent {
     },
     {
       name: "VIP",
-      price: "200",
+      price: "XX",
       features: Array(6).fill("Lorem ipsum dolor"),
       cta: "Apply now"
     },
