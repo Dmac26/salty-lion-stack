@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './testimonials.component.scss',
 })
 export class TestimonialsComponent {
+  private previousName: string = '';
+
   entries = [
     { name: "Aaron", about: "Mexican American heritage learner building connections with his students", quote: `Literally life changing! I finally ordered in Spanish at a restaurant and it went great. The program is really tailored to me — it's a ton of support and was exactly what I was looking for, and way more.` },
     { name: "Alicia", about: "non-profit professional learning Spanish to better serve her organization's clients", quote: `We chose Bridge the Gap Spanish for our team's professional development and they've been fantastic to work with. Their focus on conversational Spanish — rather than just boring grammar drills — has been perfect for our staff. It's practical, flexible, and highly professional.` },
@@ -27,4 +29,18 @@ export class TestimonialsComponent {
   ];
 
   constructor() { }
+
+  getImgUrl(name: string): string {
+    let currentName = name.toLowerCase();
+
+    if (currentName !== 'aaron' && currentName !== 'ashley') {
+      currentName = this.previousName == 'aaron' ? 'ashley' : 'aaron';
+    }
+
+    this.previousName = currentName;
+
+    return 'images/' + currentName + '.png';
+  }
+
+
 }

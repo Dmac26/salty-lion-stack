@@ -7,9 +7,8 @@
 
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
 
-.track {
+  .track {
   display: flex;
   width: max-content;
   will-change: transform;
@@ -37,12 +36,14 @@
 }
 
 .entry {
-  width: 320px;
-  height: 256px;
+  width: 400px;
+  height: 350px;
   background-color: #8f0000;
+  background-color: #e4ece1;
   border-radius: 10px;
   padding: 1rem;
-  margin: 0 8px;
+  margin: 0 1rem;
+
 
   /* Enables hardward-acceleration on Safari */
   -webkit-transform: translateZ(0);
@@ -52,3 +53,33 @@
     height: 100%;
   }
 }
+
+  .track {
+
+    .entry-group {
+      .entry {
+        .front {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            flex-grow: 1;
+            // height: 300px;
+            // width: 350px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          }
+        }
+
+        .back {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
