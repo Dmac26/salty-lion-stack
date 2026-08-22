@@ -3,11 +3,13 @@
     <div class="entry-group">
       @for (entry of entries; track entry) {
         <div class="entry">
-          <p>
-            {{entry.quote}}
-            <br />
-            &mdash; {{entry.name}}
-          </p>
+          <div class="front">
+            <img [src]="getFrontImgUrl(entry.name)">
+          </div>
+
+          <div class="back">
+            <img [src]="getBackImgUrl(entry.name)">
+          </div>
         </div>
       }
     </div>
