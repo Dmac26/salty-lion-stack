@@ -4,18 +4,12 @@
       @for (entry of entries; track entry) {
         <div class="entry">
           <div class="front">
-            <img [src]="getImgUrl(entry.name)">
-            <h3>{{entry.name}}</h3>
+            <img [src]="getFrontImgUrl(entry.name)">
           </div>
 
           <div class="back">
-            <p>
-              {{entry.quote}}
-              <br />
-              &mdash; {{entry.name}}
-            </p>
+            <img [src]="getBackImgUrl(entry.name)">
           </div>
-
         </div>
       }
     </div>
