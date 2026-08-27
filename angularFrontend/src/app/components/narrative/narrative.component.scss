@@ -4,11 +4,14 @@
     align-items: center;
     justify-content: center;
     background-color: #fff9c7;
-    background-image: url('/public/images/BTG_BACKGROUND_V1');
-    background-size: cover;          /* or contain */
+    background-image: url('/images/BTG_BACKGROUND_V1.png');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 155vh !important;
+    background-repeat: repeat;
+    //height: 155vh !important;
+    height: fit-content;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
 
     .narrative-conatiner {
         display: flex;

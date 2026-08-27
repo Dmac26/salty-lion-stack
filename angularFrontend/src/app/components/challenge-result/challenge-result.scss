@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ecf4ff;
+    // Removed background-color from here since we're setting it dynamically
     width: 100vw;
     padding: 7rem 0 7rem 0;
     height: fit-content;
@@ -65,9 +65,9 @@
             .c { grid-column: 2; grid-row: 3; height: 1.25rem; }
             .d { grid-column: 2; grid-row: 4; }
             .e { grid-column: 3; grid-row: 1; height: 1.25rem; }
-            .f { 
-                grid-column: 3; 
-                grid-row: 2; 
+            .f {
+                grid-column: 3;
+                grid-row: 2;
                 height: fit-content;
 
                 p {
@@ -79,8 +79,8 @@
             }
             .g { grid-column: 3; grid-row: 3; height: 1.25rem; }
             .h { grid-column: 3; grid-row: 4; }
-            .i { 
-                grid-column: 2 / span 2; 
+            .i {
+                grid-column: 2 / span 2;
                 grid-row: 5;
                 padding: 1rem;
                 //background: linear-gradient(to bottom, #0061fb 20%, #035bf0 100%);
