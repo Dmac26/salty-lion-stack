@@ -2,11 +2,9 @@
   display: flex;
   background-color: #ecf4ff;
   width: 100%;
-  min-height: 65vh;
+  min-height: unset !important;
   overflow: hidden;
-
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 5rem 0rem 93rem 0rem;
 
   .track {
   display: flex;

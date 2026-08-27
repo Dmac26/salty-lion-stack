@@ -5,6 +5,5 @@ import { ChallengeResult } from '@components/challenge-result/challenge-result';
   selector: 'app-challenge-result-aaron',
   imports: [ChallengeResult],
   templateUrl: './challenge-result-aaron.component.html',
-  styleUrl: './challenge-result-aaron.component.scss',
 })
 export class ChallengeResultAaronComponent {}
