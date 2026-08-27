@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     background-color: #fff9c7;
-    //background-image: url('images/BTG_BACKGROUND_V1');
+    background-image: url('/public/images/BTG_BACKGROUND_V1');
+    background-size: cover;          /* or contain */
+    background-position: center;
+    background-repeat: no-repeat;
     height: 155vh !important;
 
     .narrative-conatiner {
