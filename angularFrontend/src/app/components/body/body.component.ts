@@ -19,6 +19,11 @@ import { ChallengeResult } from '@components/challenge-result/challenge-result';
 import { PricingComponent } from '@components/pricing/pricing.component';
 import { WhyIBuild } from '@components/why-i-build/why-i-build';
 import { WhatYouGet } from '@components/what-you-get/what-you-get';
+import { ChallengeResultAaronComponent } from '@components/challenge-result-aaron/challenge-result-aaron.component';
+import { ChallengeResultMorganComponent } from '@components/challenge-result-morgan/challenge-result-morgan.component';
+import { ChallengeResultRickComponent } from '@components/challenge-result-rick/challenge-result-rick.component';
+import { ChallengeResultRyanComponent } from '@components/challenge-result-ryan/challenge-result-ryan.component';
+
 
 @Component({
   selector: 'app-body',
@@ -42,7 +47,11 @@ import { WhatYouGet } from '@components/what-you-get/what-you-get';
     ChallengeResult,
     PricingComponent,
     WhyIBuild,
-    WhatYouGet
+    WhatYouGet,
+    ChallengeResultAaronComponent,
+    ChallengeResultMorganComponent,
+    ChallengeResultRickComponent,
+    ChallengeResultRyanComponent
   ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss',
