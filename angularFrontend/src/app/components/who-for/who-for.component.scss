@@ -10,8 +10,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 80%;
-        width: 80%;
+        height: 92%;
+        width: 62%;
         background-color: #ffffff;
 
         .side-wrapper {
@@ -36,6 +36,16 @@
                     align-items: center;
                     border-top-left-radius: 92px;
                     border-bottom-left-radius: 92px;
+
+
+                    .icon-only-logo {
+                        height: 23rem;
+                        width: 24rem;
+                        border-radius: 38px;
+                        padding: 1.5rem 1rem;
+                        filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(4854%) hue-rotate(215deg) brightness(103%) contrast(104%);
+                        border:#0c5fea 3px solid;
+                    }
                 }
 
                 &.right-side-container {
@@ -51,50 +61,45 @@
                     div {
                         width: 100%;
 
-                        .bold-blue {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            width: 19.5rem;
-                            padding-left: unset;
-
-                            .bold-blue-text {
-                                margin: unset;
-                                width: fit-content;
-                                color: #0c5fea;
-                            }
-
-                            .arrow {
-                                display: flex;
-                                margin: unset;
-                                height: 1.5rem;
-                                width: 1.75rem;
-                                border-radius: 15px;
-                                padding-bottom: .25rem;
-                                align-items: center;
-                                justify-content: center;
-                                background-color: #0c5fea;
-                                color: #ffffff;
-                            }
-                        }
-
-                        &.btg-icon-section {
+                        &.right-place-section {
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             background-color: #212121;
                             border-right: 2px solid #212121;
+                            color: #ffffff;
 
+                            .right-place-headline {
+                                display: flex;
+                                width: 100%;
+                                color: #0c5fea;
 
-                            .icon-only-logo {
-                                height: 6rem;
-                                width: 8rem;
-                                border-radius: 38px;
-                                padding: 1.5rem 1rem;
-                                filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(4854%) hue-rotate(215deg) brightness(103%) contrast(104%);
-                                border:#0c5fea 3px solid;
+                                &::before {
+                                    display: inline-block;
+                                    background-color: #0c5fea;
+                                    margin-right: 5px;
+                                    margin-left: 5px;
+                                    height: 1px;
+                                    flex-grow: 2;
+                                    align-self: center;
+                                    content: "";
+                                }
+
+                                &::after {
+                                    display: inline-block;
+                                    background-color: #0c5fea;
+                                    height: 1px;
+                                    margin-right: 5px;
+                                    margin-left: 5px;
+                                    flex-grow: 2;
+                                    align-self: center;
+                                    content: "";
+                                }
                             }
 
+                            ul {
+                                width: 70%;
+                            }
                         }
                     }
                 }
@@ -122,40 +127,79 @@
                         border-bottom: 2px solid #0c5fea;
                         border-right: 2px solid #0c5fea;
                         border-bottom-right-radius: 92px;
+
+                        .bottom-section-wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 77%;
+
+
+                            .bottom-section-content {
+                                display: flex;
+                                justify-content: flex-start;
+                            }
+
+                            .bold-blue {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                height: 4rem;
+                                width: 27.5rem;
+                                padding-left: unset;
+                                padding: 0 1.5rem 0 1.5rem;
+                                border-radius: 25px;
+
+                                .bold-blue-text {
+                                    margin: unset;
+                                    width: fit-content;
+                                    color: #0c5fea;
+                                }
+
+                                .arrow {
+                                    display: flex;
+                                    margin: unset;
+                                    height: 1.75rem;
+                                    width: 3.5rem;
+                                    border-radius: 12px;
+                                    padding-bottom: .25rem;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background-color: #0c5fea;
+                                    color: #ffffff;
+
+                                    .arrow-icon {
+                                        height: .75rem;
+                                        width: 1rem;
+                                        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(340deg) brightness(112%) contrast(102%);filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(340deg) brightness(112%) contrast(102%);
+                                    }
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                    border: 2.75px solid #0c5fea;
+                                }
+
+                                &:active {
+                                    background-color: #0c5fea;
+
+                                    .bold-blue-text {
+                                        color: #ffffff;
+                                    }
+
+                                    .arrow {
+                                        background-color: #ffffff;
+                                        color: #0c5fea;
+
+                                        .arrow-icon {
+                                            filter: brightness(0) saturate(100%) invert(22%) sepia(78%) saturate(4430%) hue-rotate(215deg) brightness(98%) contrast(91%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
 
-                   .right-place-headline {
-                    display: flex;
-                    width: 100%;
-
-                    &::before {
-                        display: inline-block;
-                        background-color: #0c5fea;
-                        margin-right: 5px;
-                        margin-left: 5px;
-                        height: 1px;
-                        flex-grow: 2;
-                        align-self: center;
-                        content: "";
-                    }
-
-                    &::after {
-                        display: inline-block;
-                        background-color: #0c5fea;
-                        height: 1px;
-                        margin-right: 5px;
-                        margin-left: 5px;
-                        flex-grow: 2;
-                        align-self: center;
-                        content: "";
-                    }
-                   }
-
-                //    h2::before {
-                //         background-color: #0c5fea;
-                //         height: 3px;
-                //         width: 100%
-                //    }
                 }
             }
         }
