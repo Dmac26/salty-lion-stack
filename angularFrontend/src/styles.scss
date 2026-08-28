@@ -1,5 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Juturu Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url('/assets/fonts/juturu/Juturu-VariablVF.woff2') format('woff2-variations'),
+       url('/assets/fonts/juturu/Juturu-VariablVF.woff2') format('woff2');
+  font-display: swap;
+}
+
 body {
   margin: 0 !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Juturu Variable', sans-serif;
 }
