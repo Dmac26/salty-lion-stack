@@ -8,10 +8,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    //height: 155vh !important;
     height: fit-content;
-    padding-top: 13rem;
-    padding-bottom: 13rem;
 
     .narrative-conatiner {
         display: flex;
@@ -20,12 +17,12 @@
         height: 70%;
         width: 70%;
 
-        div {
-            width: 50%;
-        }
-
         .left-side {
+            width: 35rem;
 
+            p {
+                font-size: 1.15rem;
+            }
         }
 
         .right-side {
@@ -33,19 +30,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 73%;
-            min-height: 45rem;
+            height: 39rem;
+            width: fit-content;
 
             .working-pic {
                 height: 19rem;
+                width: 32rem;
+                border-radius: 18px;
             }
 
             .right-copy-container {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 84%;
-                padding: 1.25rem 0rem 1.25rem 0rem;
+                width: 32rem;
+                padding: 1rem 0rem 1rem 0rem;
                 border: 1px solid #f3df27;
                 border-radius: 8px;
 
@@ -58,9 +57,9 @@
                     width: 90%;
 
                     .five-stars {
-                        //height: 5rem;
                         width: 5rem;
                         filter: brightness(0) saturate(100%) invert(96%) sepia(32%) saturate(7469%) hue-rotate(336deg) brightness(99%) contrast(94%);
+                        padding: 0rem 0rem .5rem 0rem;
                     }
 
                     .bold-text {
