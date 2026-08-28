@@ -1,11 +1,11 @@
-<div class="challenge-result-card">
+<div class="challenge-result-card" [style.backgroundColor]="backgroundColor">
     <div class="challenge-result-grid">
         <div class="video-section">
-            <app-embedded-vid [videoId]="'sepdhwJvDRI'"></app-embedded-vid>
+            <app-embedded-vid [videoId]="videoId"></app-embedded-vid>
         </div>
 
         <div class="a">
-            <img class="challenge-result-icon" src="images/cactus.png">
+            <img class="challenge-result-icon" [src]="iconSrc">
         </div>
 
         <div class="b">
@@ -13,7 +13,7 @@
         </div>
 
         <div class="c">
-            <img class="challenge-result-icon" src="images/cactus.png">
+            <img class="challenge-result-icon" [src]="iconSrc">
         </div>
 
         <div class="d">
@@ -21,29 +21,35 @@
         </div>
 
         <div class="e">
-            <h3>THE CHALLENGE</h3>
+            <h3>{{ challengeTitle }}</h3>
         </div>
-        
-        <div  class="f">
+
+        <div class="f">
             <p>
-                Daniel is in the music space that has patterns of behavior that encourage discounts, low-ticket sales, and presales. He wanted to stand out and not participate in the race to the bottom.
+                {{ challengeContent }}
             </p>
         </div>
 
-        <div  class="g">
-            <h3>THE RESULT</h3>
+        <div class="g">
+            <h3>{{ resultTitle }}</h3>
         </div>
-        
-        <div  class="h">
+
+        <div class="h">
             <h1>
-                $35,000 launch with 173 new customers.
+                {{ resultContent }}
             </h1>
         </div>
 
-        <div  class="i">
+        <div class="i">
             <p>
-                “You said don’t do a presale, do a waitlist. And I ended up waiting and launching this course in April—I did $35,000 on 173 sales of the course. It was the perfect build. It was incredible. It was the best advice and it was contrary to other advice I had gotten from my industry.”
+                {{ testimonial }}
+
+                <br>
+                <br>
+
+                <span style="font-weight: bold;">- {{ customerName }}</span>
             </p>
+
         </div>
-    </div>   
+    </div>
 </div>

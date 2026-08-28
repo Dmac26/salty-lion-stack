@@ -1,0 +1,11 @@
+<div class="content-container">
+  <ng-content select="[slot='headline']"></ng-content>
+  <div class="two-column-container">
+    <div class="left-column">
+      <ng-content select="[slot='left']"></ng-content>
+    </div>
+    <div class="right-column">
+      <ng-content select="[slot='right']"></ng-content>
+    </div>
+  </div>
+</div>

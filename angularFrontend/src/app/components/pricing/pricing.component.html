@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>
+    Choose Your Membership
+  </h2>
+
+  <div class="memberships">
+    @for (membership of memberships; track $index) {
+      <app-membership
+        [name]="membership.name"
+        [price]="membership.price"
+        [features]="membership.features"
+        [isMostPopular]="membership.isMostPopular"
+        [cta]="membership.cta"
+      ></app-membership>
+    }
+  </div>
+</div>

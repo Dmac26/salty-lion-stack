@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh !important;
+    height: 90vh !important;
     background-color: #ffffff;
 
     .who-for-container {
@@ -20,7 +20,7 @@
             align-items: center;
             justify-content: center;
             height: 100%;
-            width: 50%; 
+            width: 50%;
 
             div {
                 display: flex;
@@ -46,7 +46,7 @@
                     background-color: #ffffff;
                     border-top-right-radius: 92px;
                     border-bottom-right-radius: 92px;
-                    
+
 
                     div {
                         width: 100%;
@@ -84,7 +84,7 @@
                             justify-content: center;
                             background-color: #212121;
                             border-right: 2px solid #212121;
-                            
+
 
                             .icon-only-logo {
                                 height: 6rem;
@@ -94,7 +94,7 @@
                                 filter: brightness(0) saturate(100%) invert(26%) sepia(98%) saturate(4854%) hue-rotate(215deg) brightness(103%) contrast(104%);
                                 border:#0c5fea 3px solid;
                             }
-                            
+
                         }
                     }
                 }
