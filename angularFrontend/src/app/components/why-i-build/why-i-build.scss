@@ -10,10 +10,10 @@
     .why-container {
         display: flex;
         flex-direction: row;
-        min-height: 90vh;
+        //min-height: 90vh;
         height: fit-content;
         width: 76vw;
-        padding: 2.5vh 0 2.5vh 0;
+        padding: 5rem 0 5rem 0;
 
         .left-content, .right-content {
             display: flex;
@@ -35,7 +35,7 @@
                 align-items: center;
                 justify-content: center;
                 height: 95%;
-                width: 36rem;
+                width: 34rem;
 
                 .heading {
                     align-self: flex-start;
@@ -53,7 +53,7 @@
 
             img {
                 border-radius: 23px;
-                height: 46rem;
+                height: 40rem;
                 width: 36rem;
             }
         }
