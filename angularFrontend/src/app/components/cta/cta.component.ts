@@ -13,8 +13,10 @@ export class CtaComponent {
   @Input() buttonText!: string;
 
   @HostBinding('style.--cta-bg')
+
   get ctaBackground() {
     return this.backgroundColor || '#ffffff';
   }
+
   constructor(){}
 }

@@ -1,21 +1,21 @@
-<div [attr.data-most-popular]="isMostPopular()">
+<div [attr.data-most-popular]="isMostPopular()" class="membership-container">
   <div class="most-popular-label">
     Most popular
   </div>
 
-  <div class="card-body">
-    <span class="name">{{name()}}</span>
-    <span class="price">${{price()}} / mo</span>
+  <div class="membership-content">
+      <div class="card-body">
+      <span class="name">{{name()}}</span>
+      <span class="price">${{yearlyPrice()}} / yr. (${{monthlyPrice()}}/ mo.)</span>
 
 
-    <ul>
-      @for (feature of features(); track $index) {
-        <li><span>{{feature}}</span></li>
-      }
-    </ul>
+      <ul>
+        @for (feature of features(); track $index) {
+          <li><span>{{feature}}</span></li>
+        }
+      </ul>
+    </div>
+
+    <app-cta-button [buttonText]="'Pick Plan'" [buttonHeight]="'2.5rem'"></app-cta-button>
   </div>
-
-  <a class="cta" [href]="`join?plan=${name()?.toLowerCase()}`">
-    {{cta()}}
-  </a>
 </div>

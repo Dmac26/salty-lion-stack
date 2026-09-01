@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-cta-button',
@@ -9,8 +9,17 @@ import { Component, Input } from '@angular/core';
 export class CtaButtonComponent {
   @Input() backgroundColor!: string;
   @Input() buttonText!: string;
+  @Input() buttonHeight!: string;
 
-  constructor(){}
+  @HostBinding('style.--cta-button-bg')
 
+  get ctaBackground() {
+    return this.backgroundColor || '#0061ff';
+  }
 
+  @HostBinding('style.--cta-button-height')
+
+  get ctaButtonHeight() {
+    return this.buttonHeight || '5rem';
+  }
 }
