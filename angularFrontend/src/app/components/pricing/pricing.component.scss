@@ -2,12 +2,14 @@
   box-sizing: border-box;
   padding: 2em;
   background-color: #ecf4ff;
+  min-height: unset !important;
 
   .container {
     padding: 2em;
     border-radius: 18px;
     background-color: #1f1f1d;
     color: #fff;
+    padding: 5rem 0rem;
   }
 
   h2 {
@@ -17,9 +19,9 @@
 
   .memberships {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 1rem 4rem;
+    grid-template-columns: repeat(3, 36.5rem);
+    gap: none;
+    padding: 2rem 6rem;
   }
 }
 
