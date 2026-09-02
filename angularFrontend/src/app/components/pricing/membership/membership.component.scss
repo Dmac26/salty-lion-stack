@@ -50,10 +50,16 @@
       flex-direction: column;
       align-items: center;
       align-self: flex-end;
-      height: 22rem;
+      height: 24rem;
       width: 99%;
 
       app-cta-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        width: 100%;
+
         button {
           height: 3.5rem;
         }
@@ -62,6 +68,7 @@
   }
 
   .card-body {
+    height: 70%;
     width: 88%;
     padding: var(--card-padding);
   }
