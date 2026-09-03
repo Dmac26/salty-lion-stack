@@ -7,13 +7,14 @@
     width: 100vw;
     padding: 3.5rem 0 3.5rem 0;
     height: fit-content;
+    background-color: var(--challenge-result-bg);
 
     .challenge-result-card {
         display: flex;
         flex-direction: row;
         height: 77%;
         width: 62%;
-        background: linear-gradient(to bottom, #121212 40%, #015ef7 100%);
+        background: linear-gradient(to bottom, #121212 40%, #09768a 100%);
         border-radius: 18px;
         align-items: center;
         justify-content: center;
@@ -28,7 +29,7 @@
             padding: 3rem 2rem 3rem 0rem;
             color: #ffffff;
 
-            .video-section {
+            .media-section {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -39,14 +40,14 @@
                 grid-column: 1;
                 grid-row: 1 / span 5;
 
-                app-embedded-vid {
+                app-embedded-vid, .challenge-result-image {
                     width: 80%;
                     height: 80%;
                 }
             }
 
             h3 {
-                color:#015ef7;
+                color:#0aadcc;
             }
 
             .a, .b, .c, .d, .f, .h {
@@ -84,7 +85,8 @@
                 grid-row: 5;
                 padding: 1rem;
                 //background: linear-gradient(to bottom, #0061fb 20%, #035bf0 100%);
-                background: linear-gradient(to bottom, #0061fb 70%, #014cc7 100%);
+                background: linear-gradient(to bottom, #0aadcc 70%, #014cc7 100%);
+                background: linear-gradient(to bottom, #0aadcc 70%, #015ae8 100%);
                 border-radius: 8px;
 
                 .i {
@@ -93,7 +95,7 @@
                     position: relative;
 
                     padding: 1rem;
-                    background: linear-gradient(to bottom, #0061fb 70%, #014cc7 100%);
+                    background: linear-gradient(to bottom, #0aadcc 70%, #014cc7 100%);
                     border-radius: 8px;
 
                     &::before {
@@ -117,13 +119,15 @@
             .challenge-result-icon {
                 height: 2rem;
                 width: 2rem;
-                filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(2002%) hue-rotate(210deg) brightness(91%) contrast(114%);
+                //filter: brightness(0) saturate(100%) invert(25%) sepia(100%) saturate(2002%) hue-rotate(210deg) brightness(91%) contrast(114%);
+                filter: brightness(0) saturate(100%) invert(56%) sepia(74%) saturate(1813%) hue-rotate(148deg) brightness(90%) contrast(92%);
             }
+
 
             .vertical-line {
                 width: 1px;
                 height: 92%;
-                background-color: #015ef7;
+                background-color: #0aadcc;
             }
         }
 

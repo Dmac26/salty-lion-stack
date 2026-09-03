@@ -1,7 +1,12 @@
 <div class="challenge-result-card" [style.backgroundColor]="backgroundColor">
     <div class="challenge-result-grid">
-        <div class="video-section">
-            <app-embedded-vid [videoId]="videoId"></app-embedded-vid>
+        <div class="media-section">
+            @if (isVideo) {
+                <app-embedded-vid [videoId]="mediaSource"></app-embedded-vid>
+            }
+            @else {
+                <img class="challenge-result-image" [src]="mediaSource">
+            }
         </div>
 
         <div class="a">

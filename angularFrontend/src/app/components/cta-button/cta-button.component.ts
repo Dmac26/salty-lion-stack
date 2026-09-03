@@ -7,14 +7,14 @@ import { Component, Input, HostBinding } from '@angular/core';
   styleUrl: './cta-button.component.scss',
 })
 export class CtaButtonComponent {
-  @Input() backgroundColor!: string;
+  @Input() buttonColor!: string;
   @Input() buttonText!: string;
   @Input() buttonHeight!: string;
 
   @HostBinding('style.--cta-button-bg')
 
-  get ctaBackground() {
-    return this.backgroundColor || '#0061ff';
+  get ctaButtonColor() {
+    return this.buttonColor || '#0061ff';
   }
 
   @HostBinding('style.--cta-button-height')
