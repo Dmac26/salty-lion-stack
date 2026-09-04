@@ -21,7 +21,7 @@ import { WhyIBuild } from '@components/why-i-build/why-i-build';
 import { WhatYouGet } from '@components/what-you-get/what-you-get';
 import { ChallengeResultAaronComponent } from '@components/challenge-result-aaron/challenge-result-aaron.component';
 import { ChallengeResultMorganComponent } from '@components/challenge-result-morgan/challenge-result-morgan.component';
-import { ChallengeResultRickComponent } from '@components/challenge-result-rick/challenge-result-rick.component';
+import { ChallengeResultNakeshaComponent } from '@components/challenge-result-nakesha/challenge-result-nakesha.component';
 import { ChallengeResultRyanComponent } from '@components/challenge-result-ryan/challenge-result-ryan.component';
 
 
@@ -50,7 +50,7 @@ import { ChallengeResultRyanComponent } from '@components/challenge-result-ryan/
     WhatYouGet,
     ChallengeResultAaronComponent,
     ChallengeResultMorganComponent,
-    ChallengeResultRickComponent,
+    ChallengeResultNakeshaComponent,
     ChallengeResultRyanComponent
   ],
   templateUrl: './body.component.html',

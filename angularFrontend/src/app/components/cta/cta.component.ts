@@ -10,12 +10,17 @@ import { CtaButtonComponent } from '@components/cta-button/cta-button.component'
 })
 export class CtaComponent {
   @Input() backgroundColor!: string;
+  @Input() buttonColor!: string;
   @Input() buttonText!: string;
 
   @HostBinding('style.--cta-bg')
 
   get ctaBackground() {
-    return this.backgroundColor || '#ffffff';
+    return this.backgroundColor || '';
+  }
+
+  buttonBackgroundColor(): string {
+    return this.buttonColor || '';
   }
 
   constructor(){}
