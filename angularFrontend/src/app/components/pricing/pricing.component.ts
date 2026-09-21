@@ -12,23 +12,29 @@ import { MembershipComponent } from './membership/membership.component';
 export class PricingComponent {
   readonly memberships = [
     {
-      name: "Basic",
-      price: "XX",
-      features: Array(4).fill("Lorem ipsum dolor"),
-      cta: "Join Basic"
+      name: "Community",
+      yearlyPrice: "299",
+      monthlyPrice: "39",
+      features: Array("Weekly speaking prompts","Feedback from our native conversation teachers","Practice sprints and challenges","Grammar courses"),
+      cta: "Purchase",
+      target: "https://btgspanish.circle.so/checkout/btg-spanish-community-membership"
     },
     {
-      name: "Standard",
-      price: "XX",
-      features: Array(5).fill("Lorem ipsum dolor"),
+      name: "Lite",
+      yearlyPrice: "1,799",
+      monthlyPrice: "179",
+      features: Array("Everything in Community", "Personalized conversation teacher match", "1 weekly conversation class", "48-hr reschedule window", "Quarterly progress reports"),
       isMostPopular: true,
-      cta: "Apply now"
+      cta: "Purchase",
+      target: "https://btgspanish.circle.so/checkout/lite-membership"
     },
     {
       name: "VIP",
-      price: "XX",
-      features: Array(6).fill("Lorem ipsum dolor"),
-      cta: "Apply now"
+      yearlyPrice: "3,999",
+      monthlyPrice: "499",
+      features: Array("Everything in Community", "Personalized conversation teacher match", "3 weekly conversation classes", "24-hr reschedule window", "Quarterly progress reports", "Quarterly coaching sessions"),
+      cta: "Purchase",
+      target: "https://btgspanish.circle.so/checkout/full-membership"
     },
   ];
 }

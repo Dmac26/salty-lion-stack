@@ -1,4 +1,4 @@
-<app-hero class="section"></app-hero>
+<app-hero id="home" class="section"></app-hero>
 
 <app-trailer class="section"></app-trailer>
 
@@ -6,25 +6,31 @@
 
 <app-testimonials class="section"></app-testimonials>
 
+<!-- Add quotations marks to "La Comunidad" -->
+<!-- Make the background "blue-gray" -->
+<app-cta class="section" [buttonColor]="'#0aadcc'" [backgroundColor]="'#ecf4ff'" [buttonText]="`Join La Comunidad Today`"></app-cta>
+
 <app-narrative class="section"></app-narrative>
 
-<app-challenge-result-rick></app-challenge-result-rick>
+<app-challenge-result-ryan [backgroundColor]="'#ecf4ff'"></app-challenge-result-ryan>
 
 <app-who-for class="section"></app-who-for>
 
-<app-challenge-result-aaron></app-challenge-result-aaron>
+<app-challenge-result-nakesha [backgroundColor]="'#ecf4ff'"></app-challenge-result-nakesha>
 
 <app-expectations></app-expectations>
 
-<app-cta class="section" [buttonText]="'Join the BTG Community'"></app-cta>
+<app-cta class="section" [buttonColor]="'#0aadcc'" [backgroundColor]="'#ecf4ff'" [buttonText]="'Get Started Now!'"></app-cta>
 
-<app-challenge-result-morgan></app-challenge-result-morgan>
+<app-challenge-result-aaron [backgroundColor]="'#ecf4ff'"></app-challenge-result-aaron>
 
 <app-why-i-build></app-why-i-build>
 
-<app-what-you-get></app-what-you-get>
+<app-what-you-get id="services"></app-what-you-get>
 
-<app-challenge-result-ryan></app-challenge-result-ryan>
+<app-cta class="section" [buttonColor]="'#0aadcc'" [backgroundColor]="'#ecf4ff'" [buttonText]="'Join Today!'"></app-cta>
 
-<app-pricing class="section"></app-pricing>
+<app-challenge-result-morgan [backgroundColor]="'#ecf4ff'"></app-challenge-result-morgan>
+
+<app-pricing id="pricing" class="section"></app-pricing>
 

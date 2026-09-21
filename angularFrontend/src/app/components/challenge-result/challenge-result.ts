@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 import { EmbeddedVidComponent } from '@components/embedded-vid/embedded-vid.component'
 
 @Component({
@@ -8,7 +8,7 @@ import { EmbeddedVidComponent } from '@components/embedded-vid/embedded-vid.comp
   styleUrl: './challenge-result.scss',
 })
 export class ChallengeResult {
-  @Input() videoId: string = '';
+  @Input() mediaSource: string = '';
   @Input() iconSrc: string = 'images/cactus.png';
   @Input() challengeTitle: string = 'THE CHALLENGE';
   @Input() challengeContent: string = '';
@@ -16,5 +16,20 @@ export class ChallengeResult {
   @Input() resultContent: string = '';
   @Input() testimonial: string = '';
   @Input() customerName: string = '';
-  @Input() backgroundColor: string = '#ecf4ff';
+  @Input() backgroundColor: string = '';
+
+
+  @HostBinding('style.--challenge-result-bg')
+
+  get ctaBackground() {
+    return this.backgroundColor || '#hoopadoopa';
+  }
+
+  get isVideo() {
+    if(this.mediaSource.includes('.png') || this.mediaSource.includes('.jpg')) {
+      return false
+    }
+
+    return true;
+  }
 }

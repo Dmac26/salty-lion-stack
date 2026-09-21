@@ -1,21 +1,21 @@
 :host {
     display: flex;
     min-height: unset !important;
-    height: 50vh !important;
+    height: 46vh !important;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     background-color: #f6f9ff;
     background-color: #fff9c7;
     background-color: #ecf4ff;
 
     .hero-container {
         display: flex;
-        height: 90%;
+        height: 23rem;
         align-items: center;
         justify-content: space-between;
         gap: 4rem;
 
-            
+
             .hero-copy {
                 display: flex;
                 flex-direction: column;
@@ -71,18 +71,26 @@
                         border-radius: 12px;
 
                         &.journey-btn {
-                            background-color: #036396;
-                            background-color: #0061ff;
+                            background-color: #0aadcc;
                             color: #ffffff;
+                            border: solid 2px #0aadcc;
                         }
 
                         &.curriculum-btn {
                             background-color: #d8e4f0;
                             color: #131d26;
                         }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &:active {
+                            background-color: #09768a;
+                        }
                     }
                 }
-                    
+
             }
 
             .hero-image {

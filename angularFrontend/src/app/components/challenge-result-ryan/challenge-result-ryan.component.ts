@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { ChallengeResult } from '@components/challenge-result/challenge-result';
 
 @Component({
@@ -6,4 +6,11 @@ import { ChallengeResult } from '@components/challenge-result/challenge-result';
   imports: [ChallengeResult],
   templateUrl: './challenge-result-ryan.component.html',
 })
-export class ChallengeResultRyanComponent {}
+export class ChallengeResultRyanComponent {
+  @Input() backgroundColor: string = '';
+
+
+  challengeResultBackgroundColor(): string {
+    return this.backgroundColor || '';
+  }
+}

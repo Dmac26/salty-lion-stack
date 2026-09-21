@@ -1,7 +1,14 @@
 :host {
   padding: 2em;
+  background-image: url('/images/BTG_BACKGROUND_V1.png');
+  background-size: cover;
+  //background-size: 100vw 80vh;
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -2;
 
   h1 {
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -24,7 +31,9 @@
       i {
         justify-self: center;
         width: 0;
-        border-right: #D9D9D9 solid 3px;
+        // border-right: #D9D9D9 solid 3px;
+        border-right: #0aadcc solid 3px;
+        z-index: 1000;
       }
     }
   }

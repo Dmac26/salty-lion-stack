@@ -1,10 +1,9 @@
 <div class="main-container">
   <div class="main-layout">
     <app-header [links]="[
-    { label: 'Home', href: '#hero' },
-    { label: 'Services', href: '#services' },
-    { label: 'Projects', href: '#showcase' },
-    { label: 'Contact', href: '#cta' }
+    { label: 'Home', href: '#home' },
+    { label: 'Sevices', href: '#services' },
+    { label: 'Memberships', href: '#pricing' },
     ]"></app-header>
 
     <app-body></app-body>
@@ -12,3 +11,10 @@
     <app-footer></app-footer>
   </div>
 </div>
+
+@if(showMobileWarning) {
+  <app-mobile-warning-modal
+    (dismiss)="onWarningDismissed()"
+    (redirectToMobileSite)="onRedirectToMobile()">
+  </app-mobile-warning-modal>
+}

@@ -1,0 +1,10 @@
+<div class="video-wrapper" (click)="replay()" style="cursor: pointer; display: inline-block;">
+  <video #videoPlayer
+         width="80%"
+         height="80%"
+         muted
+         playsinline
+         preload="auto">
+    <source [src]="videoSrc" type="video/mp4">
+  </video>
+</div>

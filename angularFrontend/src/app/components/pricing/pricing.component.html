@@ -7,10 +7,12 @@
     @for (membership of memberships; track $index) {
       <app-membership
         [name]="membership.name"
-        [price]="membership.price"
+        [yearlyPrice]="membership.yearlyPrice"
+        [monthlyPrice]="membership.monthlyPrice"
         [features]="membership.features"
         [isMostPopular]="membership.isMostPopular"
         [cta]="membership.cta"
+        [target]="membership.target"
       ></app-membership>
     }
   </div>
