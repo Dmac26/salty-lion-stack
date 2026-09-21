@@ -39,10 +39,6 @@ export class CtaButtonComponent {
   }
 
   onButtonClick(): void {
-    console.clear();
-    console.log("Jesus is Lord!");
-    console.log("Target: ", this.target);
-
     if (this.target.startsWith('#')) {
       const element = document.getElementById(this.target.slice(1));
       if (element) {
